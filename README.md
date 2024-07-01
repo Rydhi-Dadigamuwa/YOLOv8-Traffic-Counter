@@ -14,7 +14,7 @@ This project counts vehicles traveling on a road using the YOLOv8 object detecti
 4. Update the paths for following variables in your script to relevant local paths on your machine:
  ```python
     Video_Path = r'C:\path\to\your\Highway_Video.mp4'
-    coveredArea_Image_path = r'C:\path\to\your\Frame_for_HighWay.png'
+     coveredArea_Image_path = r'C:\path\to\your\Frame_for_HighWay.png'
     Counter_Img_Path = r'C:\path\to\your\Vehicle_Count.png'
     YOLO_Large_Path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\YOLOv8-Traffic-Counter\yolov8l.pt'
     YOLO_Nano_Path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\YOLOv8-Traffic-Counter\yolov8n.pt'
