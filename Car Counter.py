@@ -9,7 +9,7 @@ from sort import *
 Video_Path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\YOLOv8-Traffic-Counter\Highway_Video.mp4'
 
 #Covered Area Image Path
-coveredArea_Image_path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\YOLOv8-Traffic-Counter\Frame_for_HighWay.png'
+covered_area_image_path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\YOLOv8-Traffic-Counter\Frame_for_HighWay.png'
 
 #Car Counter Image Path
 Counter_Img_Path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\YOLOv8-Traffic-Counter\Vehicle_Count.png'
@@ -20,7 +20,7 @@ def convert_path(path):
     return path
 
 cap = cv2.VideoCapture(convert_path(Video_Path))
-Covered_Area = cv2.imread(convert_path(coveredArea_Image_path))
+Covered_Area = cv2.imread(convert_path(covered_area_image_path))
 car_image = convert_path(Counter_Img_Path)
 
 #YOLO large model path
