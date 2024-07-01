@@ -5,9 +5,9 @@ import cvzone
 import math
 from sort import *
 
-Video_Path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Video\Highway_Video.mp4'
-coverdArea_Image_path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Images\Frame_for_HighWay.png'
-Counter_Img_Path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\Vehicle_Count.png'
+Video_Path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\YOLOv8-Traffic-Counter\Highway_Video.mp4'
+coveredArea_Image_path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\YOLOv8-Traffic-Counter\Frame_for_HighWay.png'
+Counter_Img_Path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\YOLOv8-Traffic-Counter\Vehicle_Count.png'
 
 def convert_path(path):
     path = path.replace(r"C:\\", "/")
@@ -15,11 +15,11 @@ def convert_path(path):
     return path
 
 cap = cv2.VideoCapture(convert_path(Video_Path))
-Covered_Area = cv2.imread(convert_path(coverdArea_Image_path))
+Covered_Area = cv2.imread(convert_path(coveredArea_Image_path))
 car_image = convert_path(Counter_Img_Path)
 
-YOLO_Large_Path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\yolov8l.pt'
-YOLO_Nano_Path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\yolov8n.pt'
+YOLO_Large_Path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\YOLOv8-Traffic-Counter\yolov8l.pt'
+YOLO_Nano_Path = r'C:\Users\DELL\PycharmProjects\Object-Detection-YOLOV8\Car Counter\YOLOv8-Traffic-Counter\yolov8n.pt'
 
 model = YOLO(convert_path(YOLO_Nano_Path))
 
